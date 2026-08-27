@@ -1,0 +1,67 @@
+generated: '2026-08-27'
+method: probed
+source: >-
+  Direct HTTPS probes of every /.well-known/ path on each host SHINE Technologies operates
+  (www.shinefusion.com and www.phoenixneutronimaging.com, the Phoenix Imaging Center brand
+  SHINE merged with in 2022). Every path returned 404. No pointer of type WellKnown,
+  SecurityTxt or APICatalog is emitted from this file, because a recorded absence is not a
+  presence — SHINE serves none of these documents.
+result: none
+note: >-
+  Both hosts are Webflow sites and return a genuine 88-byte HTML 404 body for every
+  /.well-known/* path, so these are real misses rather than an SPA catch-all answering 200
+  for everything. No security.txt, no OAuth/OIDC metadata, no api-catalog, no ai-plugin,
+  and no A2A agent card at either the current or the legacy path.
+hosts:
+- host: www.shinefusion.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+- host: www.phoenixneutronimaging.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null

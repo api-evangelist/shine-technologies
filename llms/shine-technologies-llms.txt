@@ -1,0 +1,83 @@
+# SHINE Technologies
+
+> SHINE Technologies LLC is a privately held fusion technology company founded in 2010 and
+> headquartered in Janesville, Wisconsin. It operates fusion neutron generators at industrial
+> scale — high-current particle beams strike a tritium gas target to produce an intense neutron
+> flux — and commercializes that flux across four staged business phases: neutron imaging and
+> radiation-effects testing, medical isotope production, used nuclear fuel recycling, and
+> ultimately fusion energy. SHINE publishes NO public API, SDK, developer portal or
+> machine-readable contract.
+
+generated: 2026-08-27
+method: generated
+source: apis.yml + repo artifacts; https://www.shinefusion.com/ returned 404 for /llms.txt on 2026-08-27
+publisher: API Evangelist (third-party profile — not published by SHINE Technologies)
+
+## Disambiguation — read this first
+
+This document describes **SHINE Technologies LLC** of Janesville, Wisconsin (`shinefusion.com`),
+a fusion/nuclear technology manufacturer. It is a DIFFERENT company from:
+
+- **Shine** — `shine.fr`, GitHub org `shinetools` — the French neobank for freelancers and small
+  businesses, which DOES publish a public API, developer portal and llms.txt at
+  `developers.shine.fr`. Its Open Banking products (Account Information, Payment Initiation,
+  Confirmation of Funds) belong to that company, not this one.
+- **Shine Solutions Group** — `shinesolutions.com` — an Australian technology consultancy.
+- **Shine Interview** — `shineinterview.com` — a hiring/interview platform.
+
+Do not attribute any API, SDK, endpoint or specification from those companies to SHINE Technologies.
+
+## API surface
+
+None. SHINE Technologies is a manufacturer of hardware and radiopharmaceuticals, not a software
+company. As of 2026-08-27 there is no public API, no SDK, no developer portal, no sandbox, no
+webhooks, no MCP server, no A2A agent card, and no OpenAPI, AsyncAPI, GraphQL SDL, Protobuf or
+WSDL contract published anywhere on its public surface.
+
+Contract discovery performed 2026-08-27 (all misses):
+
+- `https://www.shinefusion.com/openapi.json` — 404
+- `https://www.shinefusion.com/llms.txt` — 404
+- `https://www.shinefusion.com/api` — 404
+- `https://www.shinefusion.com/developers` — 404
+- `https://www.shinefusion.com/.well-known/*` (security.txt, openid-configuration,
+  oauth-authorization-server, oauth-protected-resource, api-catalog, ai-plugin.json,
+  agent-card.json, agent.json) — 404 on every path
+- `https://www.phoenixneutronimaging.com/.well-known/*` — 404 on every path
+- `api.shinefusion.com`, `developer.shinefusion.com`, `docs.shinefusion.com`,
+  `status.shinefusion.com` — DNS does not resolve
+- `https://www.shinefusion.com/sitemap.xml` — 200, 273 URLs, no developer/API/docs/integration section
+- GitHub organizations `shine-technologies` and `ShineFusionP3` — 0 public repositories each,
+  and neither carries metadata confirming it belongs to this company
+
+## What SHINE actually sells
+
+- **Ilumira** — non-carrier-added lutetium-177 for targeted radioligand cancer therapy, produced
+  at the Cassiopeia facility; European marketing authorization secured; shipped to 19 countries.
+- **Chrysalis** — a first-of-a-kind molybdenum-99 production facility intended to establish the
+  first domestic U.S. commercial supply, backed by a conditional $263M U.S. Department of Energy loan.
+- **FLARE** — radiation-effects testing using 14 MeV fusion neutrons for aerospace, defense and
+  advanced energy customers.
+- **Phoenix Imaging Center** — neutron imaging services (thermal and fast beams, with CT) for
+  aerospace and defense; Phoenix LLC merged with SHINE in 2022.
+- **Nuclear fuel scanner** — non-destructive inspection of nuclear fuel rods.
+- **REDUCE** — used nuclear fuel recycling, recovering uranium and plutonium from spent fuel;
+  partners include Orano, Deep Isolation, Argonne National Laboratory and Case Western.
+
+## Company
+
+- Website: https://www.shinefusion.com/
+- Insights and updates (blog): https://www.shinefusion.com/insights-updates
+- Technology overview: https://www.shinefusion.com/technology
+- Contact: https://www.shinefusion.com/contact
+- Careers: https://www.shinefusion.com/about/careers
+- Privacy policy: https://www.shinefusion.com/privacy-policy
+- Terms and conditions: https://www.shinefusion.com/terms-and-conditions
+- Secondary-market listing: https://www.hiive.com/securities/shine-technologies-stock
+- Sister brand: https://www.phoenixneutronimaging.com/
+
+## Optional
+
+- Domain security probe (TLS 1.3, HSTS enabled, SPF and DMARC present at policy `quarantine`,
+  no DNSSEC, no CAA records): `security/shine-technologies-domain-security.yml`
+- `/.well-known/` probe record, all paths 404: `well-known/shine-technologies-well-known.yml`

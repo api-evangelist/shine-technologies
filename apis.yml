@@ -1,17 +1,47 @@
 aid: shine-technologies
-name: Shine
-description: 'Shine is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+name: SHINE Technologies
+description: >-
+  SHINE Technologies is a privately held fusion technology company founded in 2010 and
+  headquartered in Janesville, Wisconsin, that operates fusion neutron generators at
+  industrial scale. High-current particle beams strike a tritium gas target to produce an
+  intense neutron flux, which SHINE applies across four staged business phases: neutron
+  imaging and radiation-effects testing (the Phoenix Imaging Center, the FLARE 14 MeV
+  radiation-effects service, and a nuclear fuel scanner), medical isotope production
+  (Cassiopeia, which makes the non-carrier-added lutetium-177 product Ilumira, and
+  Chrysalis, a molybdenum-99 facility backed by a conditional $263M U.S. Department of
+  Energy loan), used nuclear fuel recycling (the REDUCE process, with partners including
+  Orano and Deep Isolation), and ultimately fusion energy. SHINE designs and manufactures
+  its own particle accelerators, fusion targets and radiochemical processing systems, and
+  merged with Phoenix LLC in 2022. It is a manufacturer of hardware and radiopharmaceuticals
+  rather than a software company, and publishes no public API, SDK, developer portal or
+  machine-readable contract of any kind.
 url: https://raw.githubusercontent.com/api-evangelist/shine-technologies/refs/heads/main/apis.yml
+image: https://cdn.prod.website-files.com/63bc8628e53c0011f41ce702/6425da2ac24561fe6ff4a9e6_ST-Open-Graph-Image.jpg
 x-type: company
 x-source: harvest:secondary-market
-x-tier: stub
+x-source-url: https://www.hiive.com/securities/shine-technologies-stock
+x-tier: profiled
 x-tier-reason: harvest
+x-disambiguation: >-
+  Not to be confused with Shine (shine.fr / shinetools), the French neobank for freelancers
+  that DOES publish a public API at developers.shine.fr, nor with Shine Solutions Group
+  (Australian consultancy) or Shine Interview. This repo profiles SHINE Technologies LLC of
+  Janesville, Wisconsin (shinefusion.com) — the company named in the Hiive secondary-market
+  listing this record was harvested from. Do not attach shine.fr artifacts to this profile.
 specificationVersion: '0.20'
 created: '2026-08-27'
 modified: '2026-08-27'
 tags:
 - Company
+- Fusion
+- Nuclear
+- Medical Isotopes
+- Radiopharmaceuticals
+- Neutron Imaging
+- Energy
+- Advanced Manufacturing
+- Healthcare
+- Non-Destructive Testing
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +49,48 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/shine-technologies-domain-security.yml
 - type: Website
+  url: https://www.shinefusion.com/
+- type: Blog
+  url: https://www.shinefusion.com/insights-updates
+- type: PrivacyPolicy
+  url: https://www.shinefusion.com/privacy-policy
+- type: TermsOfService
+  url: https://www.shinefusion.com/terms-and-conditions
+- type: LLMsTxt
+  url: llms/shine-technologies-llms.txt
+- type: SecondaryMarket
   url: https://www.hiive.com/securities/shine-technologies-stock
+
+x-enrichment:
+  date: '2026-08-27'
+  status: minimal
+  artifacts_added: 3
+  pass: local-v1
+
+x-coverage:
+  state: none
+  reason: not-a-software-company
+  detail: >-
+    SHINE Technologies manufactures fusion neutron systems and radiopharmaceuticals
+    (lutetium-177, molybdenum-99) — its 273-URL sitemap has no developer, API, docs or
+    integration section at all, and neither candidate GitHub org holds a single public repo,
+    so there is no software product for an API to sit on.
+  evidence:
+    - url: https://www.shinefusion.com/sitemap.xml
+      status: 200
+    - url: https://www.shinefusion.com/openapi.json
+      status: 404
+    - url: https://www.shinefusion.com/llms.txt
+      status: 404
+    - url: https://www.shinefusion.com/developers
+      status: 404
+    - url: https://www.shinefusion.com/.well-known/agent-card.json
+      status: 404
+    - url: https://www.phoenixneutronimaging.com/.well-known/agent-card.json
+      status: 404
+    - url: https://api.github.com/users/shine-technologies/repos
+      status: 200
+  checked: '2026-08-27'

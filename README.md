@@ -1,4 +1,4 @@
-# Shine
+# SHINE Technologies
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,5 +64,44 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Shine is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://www.hiive.com/securities/shine-technologies-stock
+SHINE Technologies is a privately held fusion technology company founded in 2010 and headquartered in
+Janesville, Wisconsin. It operates fusion neutron generators at industrial scale — high-current particle
+beams strike a tritium gas target to produce an intense neutron flux — and applies that flux across four
+staged business phases: neutron imaging and radiation-effects testing (the Phoenix Imaging Center, the
+FLARE 14 MeV service, a nuclear fuel scanner), medical isotope production (Cassiopeia, which makes the
+non-carrier-added lutetium-177 product Ilumira, and Chrysalis for molybdenum-99), used nuclear fuel
+recycling (the REDUCE process), and ultimately fusion energy.
+
+## Not the Shine you may be looking for
+
+This profile is **SHINE Technologies LLC** of Janesville, Wisconsin — `shinefusion.com`. It is **not**:
+
+- **Shine** (`shine.fr`, GitHub `shinetools`), the French neobank for freelancers, which *does* publish a
+  public API at `developers.shine.fr`;
+- **Shine Solutions Group**, the Australian consultancy;
+- **Shine Interview**, the hiring platform.
+
+The repository slug `shine-technologies` comes from the Hiive secondary-market listing this record was
+harvested from. Do not attach `shine.fr` API artifacts to this profile.
+
+## API surface
+
+**None.** SHINE Technologies manufactures hardware (particle accelerators, fusion targets, neutron systems)
+and radiopharmaceuticals. It is not a software company and publishes no public API, SDK, developer portal,
+or machine-readable contract.
+
+Verified 2026-08-27 by full contract discovery: the 273-URL sitemap at `www.shinefusion.com/sitemap.xml`
+contains no developer, API, docs or integration section; `/openapi.json`, `/llms.txt`, `/api` and
+`/developers` all return 404; every `/.well-known/` path returns 404 on both `www.shinefusion.com` and
+`www.phoenixneutronimaging.com`; `api.`, `developer.`, `docs.` and `status.shinefusion.com` do not resolve;
+and the two candidate GitHub organizations (`shine-technologies`, `ShineFusionP3`) each hold zero public
+repositories and carry no metadata tying them to this company.
+
+## What this repository does hold
+
+| Artifact | File |
+|---|---|
+| Company profile | `apis.yml` |
+| Domain security probe (TLS/HSTS/DNSSEC/CAA/SPF/DMARC) | `security/shine-technologies-domain-security.yml` |
+| `/.well-known/` probe record (all 404) | `well-known/shine-technologies-well-known.yml` |
+| Agent-readable company summary | `llms/shine-technologies-llms.txt` |
