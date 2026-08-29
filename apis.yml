@@ -16,6 +16,17 @@ description: >-
   rather than a software company, and publishes no public API, SDK, developer portal or
   machine-readable contract of any kind.
 url: https://raw.githubusercontent.com/api-evangelist/shine-technologies/refs/heads/main/apis.yml
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 image: https://cdn.prod.website-files.com/63bc8628e53c0011f41ce702/6425da2ac24561fe6ff4a9e6_ST-Open-Graph-Image.jpg
 x-type: company
 x-source: harvest:secondary-market
