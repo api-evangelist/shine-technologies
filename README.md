@@ -64,44 +64,82 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-SHINE Technologies is a privately held fusion technology company founded in 2010 and headquartered in
-Janesville, Wisconsin. It operates fusion neutron generators at industrial scale — high-current particle
-beams strike a tritium gas target to produce an intense neutron flux — and applies that flux across four
-staged business phases: neutron imaging and radiation-effects testing (the Phoenix Imaging Center, the
-FLARE 14 MeV service, a nuclear fuel scanner), medical isotope production (Cassiopeia, which makes the
-non-carrier-added lutetium-177 product Ilumira, and Chrysalis for molybdenum-99), used nuclear fuel
-recycling (the REDUCE process), and ultimately fusion energy.
+SHINE Technologies is a privately held fusion technology company founded in 2010 and headquartered in Janesville, Wisconsin, that operates fusion neutron generators at industrial scale. High-current particle beams strike a tritium gas target to produce an intense neutron flux, which SHINE applies across four staged business phases: neutron imaging and radiation-effects testing (the Phoenix Imaging Center, the FLARE 14 MeV radiation-effects service, and a nuclear fuel scanner), medical isotope production (Cassiopeia, which makes the non-carrier-added lutetium-177 product Ilumira, and Chrysalis, a molybdenum-99 facility backed by a conditional $263M U.S. Department of Energy loan), used nuclear fuel recycling (the REDUCE process, with partners including Orano and Deep Isolation), and ultimately fusion energy. SHINE designs and manufactures its own particle accelerators, fusion targets and radiochemical processing systems, and merged with Phoenix LLC in 2022. It is a manufacturer of hardware and radiopharmaceuticals rather than a software company, and publishes no public API, SDK, developer portal or machine-readable contract of any kind.
 
-## Not the Shine you may be looking for
+**Areas:** Company · Fusion · Nuclear · Medical Isotopes · Radiopharmaceuticals · Neutron Imaging · Energy · Advanced Manufacturing · Healthcare · Non-Destructive Testing
 
-This profile is **SHINE Technologies LLC** of Janesville, Wisconsin — `shinefusion.com`. It is **not**:
+## SHINE Technologies on APIs.io
 
-- **Shine** (`shine.fr`, GitHub `shinetools`), the French neobank for freelancers, which *does* publish a
-  public API at `developers.shine.fr`;
-- **Shine Solutions Group**, the Australian consultancy;
-- **Shine Interview**, the hiring platform.
+Everything profiled for SHINE Technologies is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/shine-technologies/](https://apis.io/providers/shine-technologies/)** — or go straight to one of the APIs or properties below.
 
-The repository slug `shine-technologies` comes from the Hiive secondary-market listing this record was
-harvested from. Do not attach `shine.fr` API artifacts to this profile.
+### Published properties
 
-## API surface
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-**None.** SHINE Technologies manufactures hardware (particle accelerators, fusion targets, neutron systems)
-and radiopharmaceuticals. It is not a software company and publishes no public API, SDK, developer portal,
-or machine-readable contract.
+#### Security (1)
 
-Verified 2026-08-27 by full contract discovery: the 273-URL sitemap at `www.shinefusion.com/sitemap.xml`
-contains no developer, API, docs or integration section; `/openapi.json`, `/llms.txt`, `/api` and
-`/developers` all return 404; every `/.well-known/` path returns 404 on both `www.shinefusion.com` and
-`www.phoenixneutronimaging.com`; `api.`, `developer.`, `docs.` and `status.shinefusion.com` do not resolve;
-and the two candidate GitHub organizations (`shine-technologies`, `ShineFusionP3`) each hold zero public
-repositories and carry no metadata tying them to this company.
+Authentication, trust centre, and vulnerability disclosure.
 
-## What this repository does hold
+- [Shine Technologies Domain Security](https://apis.io/security/shine-technologies/shine-technologies-domain-security/)
 
-| Artifact | File |
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.shinefusion.com/)
+- [Blog](https://www.shinefusion.com/insights-updates)
+- [Terms of service](https://www.shinefusion.com/terms-and-conditions)
+- [Privacy policy](https://www.shinefusion.com/privacy-policy)
+
+## API Evangelist rating
+
+**Kin Score 10.1** — minimal · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
 |---|---|
-| Company profile | `apis.yml` |
-| Domain security probe (TLS/HSTS/DNSSEC/CAA/SPF/DMARC) | `security/shine-technologies-domain-security.yml` |
-| `/.well-known/` probe record (all 404) | `well-known/shine-technologies-well-known.yml` |
-| Agent-readable company summary | `llms/shine-technologies-llms.txt` |
+| Discoverability | 55.4 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 2.4 |
+| Access clarity | 21.1 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 10.9** — Health
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/shine-technologies/](https://apis.io/providers/shine-technologies/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for SHINE Technologies: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/shine-technologies/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
